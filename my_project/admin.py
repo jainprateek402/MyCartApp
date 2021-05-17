@@ -35,7 +35,7 @@ def validate_data_type(data, expected_type, key):
     try:
         return eval("expected_type(data)")
     except ValueError:
-        print(f"Enter value of {expected_type} data type")
+        print(f"Enter value of {expected_type} data type!!!")
         return validate_data_type(input(f"{key} -> "), expected_type, key)
 
 def validate_date_input(data, key):
