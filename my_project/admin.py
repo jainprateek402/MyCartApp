@@ -12,7 +12,7 @@ with open("config.json", "r") as f:
 def sign_in(user_type, login_id, password):
 
     if login_id in config[user_type]:
-
+        print(login_id)
         if password == config[user_type][login_id]["password"]:
             return True, "Sign in successfully"
         else:
